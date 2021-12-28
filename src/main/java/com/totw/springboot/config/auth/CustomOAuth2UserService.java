@@ -34,6 +34,7 @@ public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequ
         String registrationId = userRequest.getClientRegistration().getRegistrationId();
 
         // https://github.com/jojoldu/freelec-springboot2-webservice/issues/64
+
         /*
         * 로그인 요청한 각 계정마다 유니크한 id값을 부여하는 것은 OAuth를 지원하는 소셜 서비스들 간의 약속이다.
         * 그러나 이러한 id값을 구글에서는 "sub", 네이버에서는 "id"로 제공한다. 때문에 이 key값을 받아오는 것이다.

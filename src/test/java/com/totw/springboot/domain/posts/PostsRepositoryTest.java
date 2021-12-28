@@ -37,6 +37,8 @@ class PostsRepositoryTest {
                 .author("totw5701@naver.com")
                 .build());
 
+        postsRepository.flush();
+
         // When
         List<Posts> postsList = postsRepository.findAll();
 
